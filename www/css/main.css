@@ -1,0 +1,361 @@
+@import url('../webfont/stylesheet.css');
+@import url('home.css');
+@import url('grupos.css');
+@import url('internagrupo.css');
+@import url('ubicacion.css');
+@import url('contactos.css');
+@import url("invitaciones.css");
+@import url("registro.css");
+@import url("menu.css");
+@import url("sobre.css");
+
+body{
+	margin: 0px;
+	padding: 0px;
+	background: #fff;
+	height: 100%;
+	font-family: 'montserratlight';
+}
+html{
+	height: 100%;
+}
+*:focus {
+    outline: none;
+}
+.clear{
+	clear: both;
+}
+a{
+	color: rgba(225,27,76,1);
+	border-bottom: solid 1px #e11b4c;
+}
+a.over{
+	color: rgba(225,27,76,0.7);
+}
+.bt{
+	height: 44px;
+	width: 220px;
+	border:none;
+	background: rgba(225,27,76,1);
+	line-height: 44px;
+	text-align: center;
+	color: #fff;
+	margin: auto;
+	font-size: 16px;
+	border-radius: 8px;
+	font-family: 'montserratregular';
+}
+.bt.over{
+	background: rgba(225,27,76,0.7);
+}
+.input{
+	border:none;
+	border-bottom: solid 1px #d5d5d8;
+	width: 100%;
+	display: block;
+	margin: auto;
+	height: 50px;
+	line-height: 50px;
+	font-family: 'montserratlight';
+	color: #5b5b5b;
+	text-align: center;
+	font-size: 15px;
+}
+.input::-webkit-input-placeholder {
+   color: #d5d5d8;
+}
+
+.input.required::-webkit-input-placeholder {
+   color: #e11b4c;
+}
+.input.required{
+	color: #e11b4c;
+}
+#header{
+	position: fixed;
+	width: 100%;
+	z-index: 2;
+	height: 50px;
+	display: block;
+	background: #e11b4c url("../img/logo2.png") no-repeat center center;
+	background-size: auto 35px;
+	display: none;
+}
+#header.nologo{
+	background: #e11b4c;
+}
+#header .titulo{
+	display: table;
+	margin: auto;
+	line-height: 16px;
+	padding-top: 10px;
+	color: #fff;
+	text-align: center;
+	font-size: 17px;
+	font-family: 'montserratregular';
+}
+#header .titulo .sub{
+	font-family: 'montserratlight';
+	font-size: 13px;
+}
+#header .logout{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	right: 0px;
+	display: none;
+	background: url("../img/logout.png");
+	background-size: 25px 25px;
+	background-repeat: no-repeat;
+	background-position: center center;
+
+}
+#header .btn{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+#header .btn.over{
+	opacity: 0.7;
+}
+#header .btn.done{
+	background-image: url("../img/done.png");
+	background-size: 25px auto;
+	right: 0px;
+}
+#header .invitations{
+	display: none;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	right: 50px;
+	background: url("../img/friends.png");
+	background-size: 25px 25px;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+#header .invitations .num{
+	width: 20px;
+	height: 20px;
+	background-color: #d80027;
+	color: #fff;
+	line-height: 20px;
+	font-size: 12px;
+	text-align: center;
+	font-family: 'open_sansregular';
+	position: absolute;
+	margin-top: 10px;
+	display: none;
+}
+#header .btn.menu{
+	background-image: url("../img/menu.png");
+	background-size: 25px auto;
+	left: 0px;
+}
+
+#header .btn.menu .inv{
+	display: none;
+	width: 22px;
+	height: 22px;
+	border-radius: 11px;
+	position: absolute;
+	background: #fff;
+	line-height: 22px;
+	text-align: center;
+	font-size: 11px;
+	color: #e11b4c;
+	margin-left: 39px;
+	margin-top: 14px;
+}
+
+#header .btn.add{
+	
+	background-image: url("../img/cross.png");
+	background-size: 25px auto;
+	right: 0px;
+}
+#header .btn.addcontact{
+	display: none;
+	background-image: url("../img/people.png");
+	background-size: 25px auto;
+	right: 0px;
+}
+#header .btn.editar{
+	display: none;
+	background-image: url("../img/edit.png");
+	background-size: 20px auto;
+	right: 50px;
+}
+#header .back{
+	display: block;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	background: url("../img/back.png");
+	background-size: 14px auto;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.alerta{
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 100;
+	top:0px;
+	-webkit-transform: translateZ(0);
+	background: rgba(0,0,0,0.7);
+}
+.alerta .table{
+	width: 100%;
+	height: 100%;
+	display: table;
+}
+.alerta .table .cell{
+	display: table-cell;
+	width: 100%;
+	height: 100%;
+	vertical-align: middle;
+	text-align: center;
+}
+.alerta .ventana{
+	background: #fff;
+	width: 300px;
+	min-height: 130px;
+	margin: auto;
+	border-radius: 20px;
+	position: relative;
+	padding-bottom: 30px;
+	-webkit-transform: translateZ(0);
+}
+.alerta .cerrar{
+	position: absolute;
+    right: 0px;
+    top: 0px;
+    background: url(../img/close.png) no-repeat center center;
+    background-size: 18px 18px;
+    width: 50px;
+    height: 50px;
+    
+}
+.alerta .txt{
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 50px;
+	font-size: 14px;
+	line-height: 18px;
+}
+.alerta .bt.ok{
+	margin-top: 20px;
+}
+#espera{
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 110;
+	background: rgba(0,0,0,0.7);
+}
+#espera .table{
+	width: 100%;
+	height: 100%;
+	display: table;
+}
+#espera .table .cell{
+	display: table-cell;
+	width: 100%;
+	height: 100%;
+	vertical-align: middle;
+	text-align: center;
+}
+#espera .txt{
+	color: #fff;
+	font-size: 13px;
+}
+
+#contacto{
+	display: none;
+}
+#contacto .seleccione{
+	display: none;
+}
+#contacto .pic{
+	margin:auto;
+	border-radius:50px;
+	display:block;
+	margin-bottom:10px;
+}
+#contacto .nombre{
+	margin-bottom: 10px;
+	color: #000;
+	font-family: 'montserratregular';
+}
+#contacto .item{
+	text-align: content: '';
+	line-height: 50px;
+	border-bottom: solid 1px #d5d5d8;
+}
+#contacto .item:first-child{
+	border-top: solid 1px #d5d5d8;
+}
+#contacto .siapp{
+	display: none;
+}
+#contacto .noapp{
+	display: none;
+}
+#contacto .numero .telefono{
+	margin-bottom: 20px;
+}
+#contacto .msg{
+	font-size: 11px;
+	text-align: center;
+	color:#e11b4c;
+	line-height: 1.3em;
+	margin-bottom: 10px;
+}
+#contacto .lista{
+	max-height: 205px;
+	overflow: auto;
+	margin-top: 10px;
+}
+#contacto .ins{
+	font-size: 10px;
+	line-height: 1.3em;
+	text-align: justify;
+	color:#e11b4c;
+}
+#contacto .inv{
+	background: #e11b4c;
+	color: #fff;
+	font-size: 10px;
+	line-height: 12px;
+	float: right;
+	border-radius: 3px;
+	margin-top: 11px;
+	width: 50px;
+	text-align: center;
+	padding: 3px;
+	display: none;
+}
+#contacto .numero{
+
+}
+h1.titulo{
+	display: table;
+	margin: auto;
+	font-family: 'montserratregular';
+	font-size: 23px;
+	color: #000;
+	background-repeat: no-repeat;
+	line-height: 25px;
+	background-position: left center;
+	background-size: auto 20px;
+	padding: 0px;
+	padding-left: 25px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	font-weight: normal;
+}

@@ -1,0 +1,135 @@
+#contactos{
+	display: none;
+	padding-top: 50px;
+}
+#contactos .busqueda{
+	height: 50px;
+}
+#contactos .busqueda input{
+	height: 50px;
+	line-height: 50px;
+	width: calc(100% - 40px);
+	padding: 0px;
+	border: none;
+	border-bottom: solid 1px #d5d5d8;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-family: 'montserratlight';
+}
+#contactos .lista{
+	
+}
+#contactos .lista .item{
+	border-bottom: solid 1px #d5d5d8;
+	padding: 0px 20px;
+	height: 65px;
+	color: #a0a0a0;
+	/*background: url('../img/flecha1.png') no-repeat;
+	background-position: calc(100% - 16px) center;
+	background-size: 14px auto;*/
+}
+#contactos .lista .item.over{
+	background-color: #ececed;
+}
+
+#contactos .lista .item .pic{
+	width: 36px;
+	height: 36px;
+	margin-top: calc((65px - 35px)/2);
+	float: left;
+	margin-right: 10px;
+	background-size: cover;
+	border-radius: 18px;
+	background-image: url("../img/icocontacto.png"); 
+}
+
+
+
+#contactos .lista .item .nom{
+	
+	font-family: 'montserratregular';
+	font-size: 16px;
+	
+	padding-top: 13px;
+
+}
+#contactos .lista .item .tel{
+	font-family: 'montserratlight';
+	font-size: 12px;
+	
+	margin-top: 3px;
+}
+#contactos .lista .item.app{
+	color: #2b2d3a;
+}
+#contactos .lista .item.app.over{
+	background-color: #ececed;
+}
+
+#contactos .lista .item.plus{
+	background: url("../img/plus.png") no-repeat;
+	background-size: auto 30px;
+	background-position: calc(100% - 28px) center;
+}
+#contactos .lista .item.check{
+	background: url("../img/check.png") no-repeat;
+	background-size: auto 30px;
+	background-position: calc(100% - 28px) center;
+}
+
+#contactos .lista .item.app .btn.invitar{
+	display: none;
+}
+
+
+
+
+
+#contactos .invitacion{
+	background-color:rgba(0,0,0,0.6);
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 3;
+	display: none;
+	-webkit-transform: translateZ(0);
+}
+#contactos .invitacion .ventana{
+	background: #fff;
+    width: 310px;
+    height: 244px;
+    border-radius: 30px;
+    position: absolute;
+    top: calc(50% - 122px);
+    left: calc(50% - 155px);
+}
+#contactos .invitacion .ventana .margen{
+	padding: 50px;
+}
+#contactos .invitacion .ventana .nombres{
+	font-family: 'open_sansbold';
+	font-size: 20px;
+	margin-bottom: 14px;
+	text-align: center;
+}
+#contactos .invitacion .ventana .telefono{
+	font-family: 'open_sansregular';
+	font-size: 20px;
+	line-height: 30px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+#contactos .invitacion .ventana .bt.enviar{
+	width: 100%;
+}
+#contactos .invitacion .ventana .cerrar{
+	position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 34px;
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    color: #e11b4b;
+}

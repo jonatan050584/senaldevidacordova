@@ -1,0 +1,92 @@
+#home{
+	height: 100%;
+	width: 100%;
+	display: none;
+}
+#home .table{
+	width: 100%;
+	height: calc(100% - 76px);
+	display: table;
+}
+#home .table .cell{
+	width: 100%;
+	display: table-cell;
+	vertical-align: middle;
+}
+#home .logo{
+	display: block;
+	margin: auto;
+	width: 120px;
+	height: auto;
+	margin-bottom: 20px;
+	
+}
+#home .logo.short{
+	width: 120px;
+}
+#home .texto{
+	width: 220px;
+	margin: auto;
+	text-align: center;
+	color: #5b5b5b;
+	font-size: 13px;
+	margin-top: 55px;
+}
+#home .perdisteclave{
+	font-size: 13px;
+	line-height: 30px;
+	padding-top: 10px;
+	text-align: center;
+}
+
+#home .login{
+	margin-top: 10px;
+}
+#home .bt.signin{
+	margin-top: 20px;
+}
+#home .bt.fb{
+	background: #2d5eb8;
+	color: #fff;
+}
+
+#home .sincuenta{
+	text-align: center;
+	position: fixed;
+	width: 100%;
+	
+	font-size: 13px;
+}
+
+#home .txto{
+	text-align: center;
+	font-size: 15px;
+	line-height: 35px;
+	
+}
+#home .tel{
+	display: none;
+	margin-top: 20px;
+}
+#home .tel .pic{
+	width: 74px;
+	height: 74px;
+	background-color: #ccc;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	margin: auto;
+	border-radius: 37px;
+}
+#home .tel .usuario{
+	text-align: center;
+	width: 240px;
+	margin: auto;
+	color: #5b5b5b;
+	font-size: 13px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+#home .tel .bt.fbsignin{
+	margin-top: 10px;
+}

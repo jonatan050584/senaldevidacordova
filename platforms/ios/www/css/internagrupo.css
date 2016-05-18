@@ -1,0 +1,193 @@
+#internagrupo{
+	display: none;
+	padding-top: 50px;
+	
+}
+
+#internagrupo .mensajecrear{
+	display: none;
+	overflow: hidden;
+	height: 274px;
+	position: absolute;
+	width: 100%;
+	top: calc(50% - 137px);
+}
+#internagrupo .mensajecrear .contenido{
+	padding: 0 30px;
+	text-align: center;
+	color: #c9c9c9;
+}
+#internagrupo .mensajecrear .t1{
+	font-family: 'montserratlight';
+	font-size: 18px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+#internagrupo .mensajecrear .t2{
+	font-family: 'montserratlight';
+	font-size: 13px;
+	margin-bottom: 30px;
+}
+#internagrupo.singrupo{
+	min-height: calc(100% - 50px);
+	background: #f7f7f7;
+	position: relative;
+}
+#internagrupo.singrupo .mensajecrear{
+	display: block;
+}
+#internagrupo.singrupo .migrupo{
+	display: none;
+}
+#internagrupo h1.titulo{
+	
+	
+	background-image: url("../img/grupos.png");
+}
+
+#internagrupo .btn.editar{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	background-image: url("../img/edit2.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 20px auto;
+	right: 0px;
+	margin-top: -50px;
+	z-index: 10;
+
+}
+#internagrupo .btn.editar.over{
+	opacity: 0.7;
+}
+#internagrupo .btn.ubicacion{
+	height: 35px;
+	position: fixed;
+	top: 50px;
+	background: #c31f58;
+	line-height: 35px;
+	width: 100%;
+	z-index: 2;
+	display: none;
+}
+#internagrupo .btn.ubicacion .label{
+	line-height: 35px;
+	display: table;
+	margin: auto;
+	color: #fff;
+	font-size: 15px;
+	padding-right: 20px;
+	background: url("../img/icoubicacion.png") no-repeat;
+	background-position: center right;
+	background-size: auto 20px;
+}
+#internagrupo .lista{
+	margin-bottom: 20px;
+	border-top: solid 1px #d5d5d8;
+}
+#internagrupo .nombre{
+	border-bottom: solid 1px #d5d5d8;
+	border-top: solid 1px #d5d5d8;
+	text-align: center;
+	line-height: 65px;
+	font-size: 14px;
+	color: #a2a1b8;
+}
+#internagrupo .lista .item{
+	border-bottom: solid 1px #d5d5d8;
+	padding: 0px 20px;
+	line-height: 65px;
+	position: relative;
+}
+#internagrupo .lista .item.pendiente{
+	background: url("../img/time.png");
+	background-size: 30px auto;
+	background-repeat: no-repeat;
+	background-position: calc(100% - 20px) center;
+	
+}
+#internagrupo .lista .item.pendiente .nom{
+	color: #a0a0a0;
+}
+
+#internagrupo .lista .item.over{
+	background-color: #ececed;
+}
+
+#internagrupo .lista .item .nom{
+	font-family: 'montserratlight';
+	font-size: 14px;
+	color: #2b2d3a;
+
+}
+#internagrupo .lista .item .pic{
+	width: 36px;
+	height: 36px;
+	margin-top: calc((65px - 35px)/2);
+	float: left;
+	margin-right: 10px;
+	background-size: cover;
+	border-radius: 18px;
+	background-image: url("../img/icocontacto.png"); 
+}
+#internagrupo .lista .item .admin{
+	position: absolute;
+	right: 10px;
+	display: none;
+	font-size: 10px;
+	line-height: 14px;
+	padding: 0px 2px;
+	top: 0px;
+	color: #e11b4c;
+	line-height: 65px;
+}
+#internagrupo .lista .item.ad .admin{
+	display: table;
+}
+
+
+#internagrupo .edicion{
+	background-color:rgba(0,0,0,0.6);
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 30;
+	top: 0px;
+	display: none;
+	-webkit-transform: translateZ(0);
+}
+#internagrupo .edicion .ventana{
+	background: #fff;
+    width: 310px;
+    height: 244px;
+    border-radius: 20px;
+    position: absolute;
+    top: calc(50% - 122px);
+    left: calc(50% - 155px);
+}
+#internagrupo .edicion .ventana .margen{
+	padding: 50px;
+}
+#internagrupo .edicion .ventana .titulo{
+	font-size: 20px;
+	margin-bottom: 14px;
+	text-align: center;
+}
+#internagrupo .edicion .ventana .input{
+	margin-bottom: 20px;
+	width: 100%;
+}
+#internagrupo .edicion .ventana .bt.creargrupo{
+	width: 100%;
+}
+#internagrupo .edicion .ventana .cerrar{
+	position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 34px;
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    color: #e11b4b;
+}

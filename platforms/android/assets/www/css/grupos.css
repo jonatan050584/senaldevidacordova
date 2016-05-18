@@ -1,0 +1,113 @@
+#grupos{
+	display: none;
+	padding-top: 50px;
+}
+#grupos h1.titulo{
+	background-image: url("../img/grupos.png");
+}
+#grupos .perfil{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2e3192+0,e11b4c+100 */
+	background: #2e3192; /* Old browsers */
+	background: -moz-linear-gradient(top,  #2e3192 0%, #e11b4c 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #2e3192 0%,#e11b4c 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #2e3192 0%,#e11b4c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2e3192', endColorstr='#e11b4c',GradientType=0 ); /* IE6-9 */
+	height: 120px;
+	padding-top: 44px;
+	width: 100%;
+	display: table;
+}
+#grupos .perfil .pic{
+	width: 74px;
+	height: 74px;
+	background-color: #fff;
+	background-size: cover;
+	background-position: center center;
+	border-radius: 37px;
+	margin-left: 15px;
+	float: left;
+}
+#grupos .perfil .cell{
+	width: 100%;
+	height: 100%;
+	vertical-align: middle;
+	display: table-cell;
+}
+#grupos .perfil .nombre{
+	display: table-cell;
+	height: 74px;
+	vertical-align: middle;
+	padding-left: 10px;
+	color: #fff;
+	font-size: 17px;
+}
+#grupos .lista .item{
+	border-bottom: solid 1px #d5d5d8;
+	padding: 0px 20px;
+	line-height: 65px;
+	background: url('../img/flecha1.png') no-repeat;
+	background-position: calc(100% - 16px) center;
+	background-size: 14px auto;
+}
+#grupos .lista .item.over{
+	background-color: #ececed;
+}
+#grupos .lista .item:first-child{
+	border-top: solid 1px #d5d5d8;
+}
+#grupos .lista .item .nom{
+	font-family: 'montserratlight';
+	font-size: 14px;
+	color: #2b2d3a;
+
+}
+#grupos .lista .item .cant{
+	font-family: 'montserratultra_light';
+	color: #2c2b2b;
+	font-size: 12px;
+	display: none;
+}
+
+#grupos .creacion{
+	background-color:rgba(0,0,0,0.6);
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 3;
+	display: none;
+	-webkit-transform: translateZ(0);
+}
+#grupos .creacion .ventana{
+	background: #fff;
+    width: 310px;
+    height: 244px;
+    border-radius: 20px;
+    position: absolute;
+    top: calc(50% - 122px);
+    left: calc(50% - 155px);
+}
+#grupos .creacion .ventana .margen{
+	padding: 50px;
+}
+#grupos .creacion .ventana .titulo{
+	font-size: 20px;
+	margin-bottom: 14px;
+	text-align: center;
+}
+#grupos .creacion .ventana .input{
+	margin-bottom: 20px;
+	width: 100%;
+}
+#grupos .creacion .ventana .bt.creargrupo{
+	width: 100%;
+}
+#grupos .creacion .ventana .cerrar{
+	position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 34px;
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    color: #e11b4b;
+}

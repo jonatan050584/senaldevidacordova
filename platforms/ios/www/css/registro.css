@@ -1,0 +1,18 @@
+#registro{
+	display: none;
+}
+
+#registro .form{
+	padding-top: 50px;
+}
+
+#registro .line{
+	border-bottom:solid 1px #d5d5d8;
+	height: 1px;
+}
+#registro .bt.guardar{
+	margin-top: 48px;
+}
+#registro h1.titulo{
+	background-image: url("../img/registro.png");
+}

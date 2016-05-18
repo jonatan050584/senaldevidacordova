@@ -1,0 +1,59 @@
+#invitaciones{
+	display: none;
+	padding-top: 50px;
+}
+#invitaciones .lista{
+	border-top: solid 1px #d5d5d8;
+}
+#invitaciones .lista .item{
+	border-bottom: solid 1px #d5d5d8;
+	padding: 20px 35px;
+	/*background: url('../img/flecha1.png') no-repeat;
+	background-position: calc(100% - 16px) center;
+	background-size: 14px auto;*/
+	font-size: 13px;
+}
+#invitaciones .lista .item .txt {
+    margin-bottom: 10px;
+    text-align: justify;
+    line-height: 18px;
+}
+#invitaciones .lista .item .usuario{
+	font-family: 'montserratregular';
+	color: #2c2b2b;
+
+}
+
+#invitaciones h1.titulo{
+	background-image: url("../img/icoinv.png");
+}
+
+#invitaciones .lista .item .pic {
+    width: 36px;
+    height: 36px;
+    margin-top: 0px;
+    float: left;
+    margin-right: 10px;
+    background-size: cover;
+    border-radius: 18px;
+    background-image: url("../img/icocontacto.png");
+}
+#invitaciones .bt{
+	float: left;
+    height: 30px;
+    width: 120px;
+    line-height: 30px;
+    margin: auto;
+    margin-right: 10px;
+    font-size: 13px;
+    border-radius: 4px;
+}
+#invitaciones .bt.rechazar{
+	background: #d5d5d8;
+    float: right;
+    margin-right: 0px;
+}
+#invitaciones .nohay{
+	font-size: 13px;
+	padding: 20px;
+}

@@ -1,0 +1,14 @@
+#sobre{
+	display: none;
+	padding-top: 50px;
+}
+#sobre h1.titulo{
+	background-image: url("../img/icosobre.png");
+}
+#sobre .texto{
+	padding: 24px;
+	line-height: 24px;
+	text-align: center;
+	
+
+}

@@ -1,0 +1,9 @@
+#ubicacion{
+	display: none;
+	height: calc(100% - 50px);
+	padding-top: 50px;
+}
+#map-canvas{
+	background: #ccc;
+	height: 100%;
+}
