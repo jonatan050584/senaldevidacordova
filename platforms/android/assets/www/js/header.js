@@ -91,12 +91,7 @@ var Header = function(){
 				
 							
 			}else{
-				$.ajax({
-					url:'contacto.json',
-					dataType:'json'
-				}).done(function(json){
-					internagrupo.seleccionarContacto(json);	
-				})
+				listarContactos();
 				
 			}
 		}
@@ -128,21 +123,8 @@ function checkPermissionCallback(status) {
 }
 
 function listarContactos(){
-	navigator.contacts.pickContact(function(contact){
-	        //console.log('The following contact has been selected:' + JSON.stringify(contact));
-	        internagrupo.seleccionarContacto(contact);
-    },function(err){
-        console.log('Error: ' + err);
-    });
 
-
-    var options      = new ContactFindOptions();
-	options.filter   = "";
-	options.multiple = true;
+	getContent({page:"contactos"},true);
 	
-	navigator.contacts.find(['displayName', 'name','phoneNumbers'], function(res){
-		console.log(res);
-	}, function(e){
-		//console.log(error);
-	}, options);
+	
 }

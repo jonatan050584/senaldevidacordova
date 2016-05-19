@@ -91,12 +91,7 @@ var Header = function(){
 				
 							
 			}else{
-				$.ajax({
-					url:'contacto.json',
-					dataType:'json'
-				}).done(function(json){
-					internagrupo.seleccionarContacto(json);	
-				})
+				listarContactos();
 				
 			}
 		}
@@ -128,10 +123,8 @@ function checkPermissionCallback(status) {
 }
 
 function listarContactos(){
-	navigator.contacts.pickContact(function(contact){
-	        //console.log('The following contact has been selected:' + JSON.stringify(contact));
-	        internagrupo.seleccionarContacto(contact);
-    },function(err){
-        console.log('Error: ' + err);
-    });
+
+	getContent({page:"contactos"},true);
+	
+	
 }

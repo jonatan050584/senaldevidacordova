@@ -257,6 +257,10 @@ a.over{
 	position: fixed;
 	z-index: 110;
 	background: rgba(0,0,0,0.7);
+	background-image: url("../img/loading.gif");
+	background-repeat: no-repeat;
+	background-size: 80px auto;
+	background-position: center center;
 }
 #espera .table{
 	width: 100%;
@@ -273,6 +277,7 @@ a.over{
 #espera .txt{
 	color: #fff;
 	font-size: 13px;
+	padding-top: 110px;
 }
 
 #contacto{

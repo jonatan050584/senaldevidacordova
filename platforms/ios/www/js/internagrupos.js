@@ -35,7 +35,8 @@ var Internagrupo = function(){
 				grupo:usuario.grupo.id,
 				admin:internagrupo.admin
 			},function(res){
-
+				$("#internagrupo .lista .miembros").empty();
+				$("#internagrupo .lista .pendientes").empty();
 				if(usuario.invitaciones!=null){
 					$.each(usuario.invitaciones,function(k,v){
 						var id = v.id;
@@ -66,7 +67,7 @@ var Internagrupo = function(){
 	
 
 	this.mostrar = function(){
-		
+		console.log("mostraaaaaar");
 		
 		
 		//contactos.flag=false;
@@ -78,6 +79,7 @@ var Internagrupo = function(){
 			header.mostrar("menu");
 			$("#internagrupo").addClass("singrupo");
 		}else{
+			console.log("vaaaa");
 
 			if(usuario.miembros!=null){
 				$.each(usuario.miembros,function(k,v){
@@ -104,6 +106,8 @@ var Internagrupo = function(){
 
 	this.listarpendientes = function(){
 
+		
+
 		if(online){
 			new Request("grupo/listarinvitaciones",{
 				grupo:usuario.grupo.id
@@ -117,6 +121,7 @@ var Internagrupo = function(){
 	}
 
 	this.listarmiembros = function(){
+		
 		if(online){
 			new Request("grupo/listarmiembros",{
 				grupo:usuario.grupo.id
@@ -141,18 +146,22 @@ var Internagrupo = function(){
 	this.llenarListaMiembros = function(){
 		$("#internagrupo .lista .miembros").empty();
 		contactos.total = 0;
-		$.each(usuario.miembros,function(key,val){
-			contactos.total++;
-			var it = new ItemMiembro(val);
-			$("#internagrupo .lista .miembros").append(it.html);
-		})	
+		if(usuario.miembros!=null){
+			$.each(usuario.miembros,function(key,val){
+				contactos.total++;
+				var it = new ItemMiembro(val);
+				$("#internagrupo .lista .miembros").append(it.html);
+			})	
+		}
 	}
 	this.llenarListaPendientes = function(){
 		$("#internagrupo .lista .pendientes").empty();
-		$.each(usuario.invitaciones,function(key,val){
-			var it = new ItemMiembro(val,"pendiente");
-			$("#internagrupo .lista .pendientes").append(it.html);
-		})	
+		if(usuario.invitaciones!=null){
+			$.each(usuario.invitaciones,function(key,val){
+				var it = new ItemMiembro(val,"pendiente");
+				$("#internagrupo .lista .pendientes").append(it.html);
+			})	
+		}
 	}
 
 	this.seleccionarContacto = function(info){

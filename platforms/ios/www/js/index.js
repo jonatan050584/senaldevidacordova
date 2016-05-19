@@ -47,6 +47,9 @@ var online =false;
 
 var flaginit=false;
 
+
+
+
 var app = {
     
     initialize: function() {
@@ -76,6 +79,9 @@ var app = {
     },
     
     onDeviceResume: function(){
+
+        getContent({page:"internagrupo"},true);
+
         //alert(1);
         //backgroundGeoLocation.stop()
         
@@ -126,6 +132,7 @@ var app = {
             $("#contacto").hide();
         });
 
+
         comprobarVersion();
         /*
         var push = PushNotification.init({
@@ -172,7 +179,7 @@ var app = {
         if(!production){
             setTimeout(function(){
                 facebook.init();
-            },2000);
+            },4000);
             initTime = 4000;
         }
 
